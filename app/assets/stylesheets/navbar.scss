@@ -37,7 +37,7 @@
 
 
 // LOCAL DEVELOPMENT environment
-$development: #1a327c;
+$development: #441f84;
 // Set colour for Aker button background
 #development.navbar-inverse .navbar-nav > .open > a {
   background-color: darken($development, 12.5%);
@@ -94,7 +94,7 @@ $uat: #2196F3;
 
 
 // PRODUCTION environment
-$production: #2196F3;
+$production: #1a327c;
 // Set colour for Aker button background
 #production.navbar-inverse .navbar-nav > .open > a {
   background-color: darken($production, 12.5%);
