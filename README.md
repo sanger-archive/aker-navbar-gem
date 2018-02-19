@@ -1,8 +1,8 @@
 # AkerSharedNavbar
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/aker_shared_navbar`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem centralises the layout and style of the Aker navigation bar, eliminating the need to update each front-end application separately for minor (or major) changes.
 
-TODO: Delete this and the text above, and describe your gem
+It consists of two files that can be accessed in host applications, the template for the navbar (a partial) and the stylesheet.
 
 ## Installation
 
@@ -16,13 +16,15 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install aker_shared_navbar
-
 ## Usage
 
-TODO: Write usage instructions here
+The CSS should be imported in `app/assets/stylesheets/application.scss`:
+
+    @import "navbar";
+
+The navigation bar partial can be rendered as follows:
+
+    <%= render partial: "navbar" %>
 
 ## Development
 
