@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "aker_shared_navbar/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "aker_shared_navbar"
+  spec.name          = "aker_navbar"
   spec.version       = AkerSharedNavbar::VERSION
   spec.authors       = ["Alex Cummins"]
   spec.email         = ["alex.cummins@sanger.ac.uk"]
