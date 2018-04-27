@@ -110,3 +110,21 @@ $production: #1a327c;
   background-color: darken($production, 12.5%);
   font-weight: bold;
 }
+
+// WIP environment
+$wip: #b51313;
+// Set colour for Aker button background
+#wip.navbar-inverse .navbar-nav > .open > a {
+  background-color: darken($wip, 12.5%);
+  &:hover, &:focus {
+    background-color: darken($wip, 12.5%);
+  }
+}
+// Navigation bar background colour
+#wip {
+  background-color: $wip;
+}
+#current-page-wip {
+  background-color: darken($wip, 12.5%);
+  font-weight: bold;
+}
