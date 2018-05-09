@@ -112,19 +112,19 @@ $production: #1a327c;
 }
 
 // WIP environment
-$wip: #b51313;
+$wip: linear-gradient(to top, #ee0979, #ff6a00);
 // Set colour for Aker button background
 #wip.navbar-inverse .navbar-nav > .open > a {
-  background-color: darken($wip, 12.5%);
+  background: linear-gradient(to top, #ee0979, #ff6a00);
   &:hover, &:focus {
-    background-color: darken($wip, 12.5%);
+    background: linear-gradient(to top, darken(#ee0979, 5%), darken(#ff6a00, 5%));
   }
 }
 // Navigation bar background colour
 #wip {
-  background-color: $wip;
+  background: linear-gradient(to top, #ee0979, #ff6a00);
 }
 #current-page-wip {
-  background-color: darken($wip, 12.5%);
+  background: linear-gradient(to top, darken(#ee0979, 5%), darken(#ff6a00, 5%));
   font-weight: bold;
 }
