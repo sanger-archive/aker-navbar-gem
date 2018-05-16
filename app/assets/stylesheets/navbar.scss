@@ -128,3 +128,21 @@ $wip: linear-gradient(to top, #ee0979, #ff6a00);
   background: linear-gradient(to top, darken(#ee0979, 5%), darken(#ff6a00, 5%));
   font-weight: bold;
 }
+
+// UAT2 environment
+$uat2: linear-gradient(to top, #C33764, #1D2671);
+// Set colour for Aker button background
+#uat2.navbar-inverse .navbar-nav > .open > a {
+  background: linear-gradient(to top, #C33764, #1D2671);
+  &:hover, &:focus {
+    background: linear-gradient(to top, darken(#C33764, 10%), darken(#1D2671, 10%));
+  }
+}
+// Navigation bar background colour
+#uat2 {
+  background: linear-gradient(to top, #C33764, #1D2671);
+}
+#current-page-uat2 {
+  background: linear-gradient(to top, darken(#C33764, 10%), darken(#1D2671, 10%));
+  font-weight: bold;
+}
