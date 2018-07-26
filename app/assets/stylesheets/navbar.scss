@@ -35,6 +35,10 @@
   color: white !important;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 // LOCAL DEVELOPMENT environment
 $development: #441f84;
@@ -54,22 +58,21 @@ $development: #441f84;
   font-weight: bold;
 }
 
-
-// STAGING environment
-$dev: #1f7a30;
+// WIP environment
+$wip: linear-gradient(to top, #ee0979, #ff6a00);
 // Set colour for Aker button background
-#dev.navbar-inverse .navbar-nav > .open > a {
-  background-color: darken($dev, 12.5%);
+#wip.navbar-inverse .navbar-nav > .open > a {
+  background: linear-gradient(to top, #ee0979, #ff6a00);
   &:hover, &:focus {
-    background-color: darken($dev, 12.5%);
+    background: linear-gradient(to top, darken(#ee0979, 5%), darken(#ff6a00, 5%));
   }
 }
 // Navigation bar background colour
-#dev {
-  background-color: $dev;
+#wip {
+  background: linear-gradient(to top, #ee0979, #ff6a00);
 }
-#current-page-dev {
-  background-color: darken($dev, 12.5%);
+#current-page-wip {
+  background: linear-gradient(to top, darken(#ee0979, 5%), darken(#ff6a00, 5%));
   font-weight: bold;
 }
 
@@ -92,57 +95,20 @@ $uat: #2196F3;
   font-weight: bold;
 }
 
-
-// PRODUCTION environment
-$production: #1a327c;
+// PROD environment
+$prod: linear-gradient(to bottom, #373b44, #4286f4);
 // Set colour for Aker button background
-#production.navbar-inverse .navbar-nav > .open > a {
-  background-color: darken($production, 12.5%);
+#prod.navbar-inverse .navbar-nav > .open > a {
+  background: linear-gradient(to bottom, #373b44, #4286f4);
   &:hover, &:focus {
-    background-color: darken($production, 12.5%);
+    background: linear-gradient(to bottom, darken(#373b44, 5%), darken(#4286f4, 5%));
   }
 }
 // Navigation bar background colour
-#production {
-  background-color: $production;
+#prod {
+  background: linear-gradient(to bottom, #373b44, #4286f4);
 }
-#current-page-production {
-  background-color: darken($production, 12.5%);
-  font-weight: bold;
-}
-
-// WIP environment
-$wip: linear-gradient(to top, #ee0979, #ff6a00);
-// Set colour for Aker button background
-#wip.navbar-inverse .navbar-nav > .open > a {
-  background: linear-gradient(to top, #ee0979, #ff6a00);
-  &:hover, &:focus {
-    background: linear-gradient(to top, darken(#ee0979, 5%), darken(#ff6a00, 5%));
-  }
-}
-// Navigation bar background colour
-#wip {
-  background: linear-gradient(to top, #ee0979, #ff6a00);
-}
-#current-page-wip {
-  background: linear-gradient(to top, darken(#ee0979, 5%), darken(#ff6a00, 5%));
-  font-weight: bold;
-}
-
-// UAT2 environment
-$uat2: linear-gradient(to top, #C33764, #1D2671);
-// Set colour for Aker button background
-#uat2.navbar-inverse .navbar-nav > .open > a {
-  background: linear-gradient(to top, #C33764, #1D2671);
-  &:hover, &:focus {
-    background: linear-gradient(to top, darken(#C33764, 10%), darken(#1D2671, 10%));
-  }
-}
-// Navigation bar background colour
-#uat2 {
-  background: linear-gradient(to top, #C33764, #1D2671);
-}
-#current-page-uat2 {
-  background: linear-gradient(to top, darken(#C33764, 10%), darken(#1D2671, 10%));
+#current-page-prod {
+  background: linear-gradient(to bottom, darken(#373b44, 5%), darken(#4286f4, 5%));
   font-weight: bold;
 }
