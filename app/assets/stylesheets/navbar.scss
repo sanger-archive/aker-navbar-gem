@@ -58,6 +58,24 @@ $development: #441f84;
   font-weight: bold;
 }
 
+// DISP environment - orange
+$disp: #f28a21;
+// Set colour for Aker button background
+#disp.navbar-inverse .navbar-nav > .open > a {
+  background-color: darken($disp, 12.5%);
+  &:hover, &:focus {
+    background-color: darken($disp, 12.5%);
+  }
+}
+// Navigation bar background colour
+#disp {
+  background-color: $disp;
+}
+#current-page-disp {
+  background-color: darken($disp, 12.5%);
+  font-weight: bold;
+}
+
 // WIP environment
 $wip: linear-gradient(to top, #ee0979, #ff6a00);
 // Set colour for Aker button background
